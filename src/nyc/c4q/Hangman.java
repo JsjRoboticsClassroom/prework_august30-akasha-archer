@@ -23,6 +23,11 @@ public class Hangman {
         mLastGuess = Character.toUpperCase(input);
     }
 
+    public static String readString() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.next();
+    }
+
     public void promptPlayer(String string) {
         System.out.println(string);
     }
